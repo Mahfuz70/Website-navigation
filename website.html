@@ -1,0 +1,486 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" href="logo.png" >
+
+<meta charset="UTF-8">
+<meta name="description" content="Ahamed Computers LTD">
+<meta name="author" content="Mahfuz Ahamed">
+<meta http-equive="refresh" content="60">
+<meta http-equive="x-ua-compatible" content="ie=edge" >
+<meta name="keyword" content="SEO Here" >
+<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0" >
+<title> Mahfuz Ahamed/Home </title>
+
+<link rel="#" href="#" >
+<link rel="#" href="#" >
+<link rel="#" href="#" >
+
+
+<style type="text/css">
+
+	*{
+		margin:0px;
+		padding:0px;
+		box-sizing:border-box;
+	}
+	
+	body{
+		background:rgb(175,230,230);
+	}
+	
+	.nav-bar1{
+		max-width:100%;
+		padding-right:10px;
+		background:rgb(0,100,0);
+		text-align:center;
+	}
+	
+	.nav-bar1 ul{
+		display:inline-flex;
+		list-style:none;
+		color:#fff;
+	}
+	
+	.nav-bar1 ul li{
+		margin:0 20px;
+		padding:10px 8px;
+		box-sizing:border-box;
+	}
+	
+	.nav-bar1 ul li a{
+		text-decoration:none;
+		color:white;
+	}
+	.nav-bar1 ul li:hover{
+		background-color:Indigo;
+	}
+	
+	.sub-bar2{
+		display:none;
+	}
+	
+	.nav-bar1 ul li:hover .sub-bar2{
+		display:block;
+		position:absolute;
+		background:green;
+		margin-top:30px;
+		margin-left:30px;
+		z-index:2;
+	}
+	
+	.nav-bar1 ul li:hover .sub-bar2 ul{
+		display:block;
+	}
+	
+	.nav-bar1 ul li:hover .sub-bar2 ul li{
+		height:40px;
+		border-bottom:1px solid #fff;
+	}
+	
+	.nav-bar1 ul li:hover .sub-bar2 ul li:last-child{
+		border-bottom:none;
+	}
+	
+	.ntl-bar3{
+		display:none;
+	}
+	.sub-bar2 ul li:hover .ntl-bar3{
+		display:block;
+		position:absolute;
+		margin-left:100px;
+		background:green;
+		margin-top:10px;
+		z-index:2;
+	}
+	
+	.sub-bar2 ul li:hover .ntl-bar3 ul{
+		display:block;
+	}
+	
+	.frd-bar2{
+		display:none;
+	}
+	
+	.nav-bar1 ul li:hover .frd-bar2{
+		display:block;
+		float:left;
+		position:absolute;
+		background:green;
+		margin-top:30px;
+		z-index:2;
+		
+	}
+	
+	.nav-bar1 ul li:hover .frd-bar2 ul{
+		display:block;
+	
+	}
+	
+	.nav-bar1 ul li:hover .frd-bar2 ul li{
+		background:green;
+		width:80px;
+		height:40px;
+		margin-top:10px;
+		border-bottom:1px solid #fff;
+	}
+	
+	.frd-bar2 ul li:hover .frd-bar2 ul li{
+		background:indigo;
+	}
+	
+	.nav-bar1 ul li:hover .frd-bar2 ul li:last-child{
+		border-bottom:none;
+	}
+	
+	
+	
+
+	
+	/*.active{
+		background:black;
+		color:white;
+	}*/
+	
+	.main-box{
+		float:left;
+		height:250px;
+		width:210px;
+		margin:100px 75px;
+		border-radius:5px;
+		position:relative;
+		z-index:1;
+		border-top:1px solid white;
+		border-left:1px solid white;
+		box-shadow: 0 16px 32px  rgba(0,0,0,0.6);
+		background-color:rgba(255,255,255,0.4);
+	}
+	
+	.main-box:before{
+		content:'';
+		height:35%;
+		width:40%;
+		margin-top:-40px;
+		margin-left:-40px;
+		position:absolute;
+		border-radius:5px;
+		border-top:1px solid white;
+		border-left:1px solid white;
+		background-color:rgba(255,255,255,0.4);
+	}
+	
+	.main-box:after{
+		content:'';
+		height:35%;
+		width:40%;
+		margin-top:200px;
+		margin-left:165px;
+		position:absolute;
+		border-radius:5px;
+		background-color:rgba(255,255,255,0.4);
+	}
+	
+	.bike-photo{
+		height:80px;
+		width:80px;
+		margin: 45px 65px;
+		border: 1px solid white;
+		border-radius:10px;
+		position:absolute;
+	}
+	.bike-photo:hover{
+		transform:scale(1.2,1.2);
+		transition: all 0.5s;
+	}
+	
+	p{
+		font-weight:bold;
+		margin-top:150px;
+		margin-left:40px;
+		position:absolute;
+		color:rgba(0,0,0,0.6);
+	}
+	
+	h{
+		font-weight:bold;
+		margin-top:190px;
+		margin-left:60px;
+		position:absolute;
+		font-size:1.1rem;
+		color:rgba(0,0,0,0.8);
+	}
+	
+	.btn{
+		margin-top:237px;
+		margin-left:75px;
+		position:absolute;
+		font-weight:bold;
+		border:none;
+		border-radius:5px;
+		padding:5px 10px;
+		background-color:rgba(255,255,255,0.8);
+	}
+	
+	.btn:hover{
+		transform:scale(1.1,1.1);
+		transition: all 0.5s;
+	}
+	
+	
+	.main-box2{
+		float:right;
+		height:250px;
+		width:210px;
+		margin:100px 75px;
+		border-radius:5px;
+		position:relative;
+		z-index:1;
+		border-top:1px solid white;
+		border-left:1px solid white;
+		box-shadow: 0 16px 32px  rgba(0,0,0,0.6);
+		background-color:rgba(255,255,255,0.4);
+	}
+	
+	.main-box2:before{
+		content:'';
+		height:35%;
+		width:40%;
+		margin-top:-40px;
+		margin-left:-40px;
+		position:absolute;
+		border-radius:5px;
+		border-top:1px solid white;
+		border-left:1px solid white;
+		background-color:rgba(255,255,255,0.4);
+	}
+	
+	.main-box2:after{
+		content:'';
+		height:35%;
+		width:40%;
+		margin-top:200px;
+		margin-left:165px;
+		position:absolute;
+		border-radius:5px;
+		background-color:rgba(255,255,255,0.4);
+	}
+	
+	.bike-photo2{
+		height:80px;
+		width:80px;
+		margin: 45px 65px;
+		border: 1px solid white;
+		border-radius:10px;
+		position:absolute;
+	}
+	.bike-photo2:hover{
+		transform:scale(1.2,1.2);
+		transition: all 0.5s;
+	}
+	
+	p2{
+		font-weight:bold;
+		margin-top:150px;
+		margin-left:40px;
+		position:absolute;
+		color:rgba(0,0,0,0.6);
+	}
+	
+	h2{
+		font-weight:bold;
+		margin-top:190px;
+		margin-left:60px;
+		position:absolute;
+		font-size:1.1rem;
+		color:rgba(0,0,0,0.8);
+	}
+	
+	.btn2{
+		margin-top:237px;
+		margin-left:75px;
+		position:absolute;
+		font-weight:bold;
+		border:none;
+		border-radius:5px;
+		padding:5px 10px;
+		background-color:rgba(255,255,255,0.8);
+	}
+	
+	.btn2:hover{
+		transform:scale(1.1,1.1);
+		transition: all 0.5s;
+	}
+	
+	/* Table for My Bike */
+	
+	.bike{
+		border:1px solid black;
+		margin:10px auto;
+		align-items:center;
+		height:100px;
+		width:100%;
+	}
+	
+	.bike th,tr{
+		margin:20px:
+		background:black;
+	}
+	
+</style>
+<script type="text/javascript">
+
+/*<!-- java Script text here/ unknown-->*/
+
+</script>
+
+
+</head>
+
+<body>
+	<div class="nav-bar1">
+		<ul>
+			<li><a href="index.html" > Home </a></li>
+			<li><a href="education.html" > Education </a>
+				<div class="sub-bar2">
+					<ul>
+						<li><a href="#" > Primary </a></li>
+						<li><a href="#" > SSC </a></li>
+						<li><a href="#" > HSC </a></li>
+						<li><a href="#" > B.Sc (Hons) </a></li>
+						<li><a href="#" > M.Sc </a></li>
+						<li><a href="#" > PhD </a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#" > Offices </a>
+				<div class="sub-bar2">
+					<ul>
+						<li><a href="#" > National </a>
+							<div class="ntl-bar3">
+								<ul>
+									<li><a href="#" > Dhaka </a></li>
+									<li><a href="#" > Chittagong </a></li>
+									<li><a href="#" > Rajshahi </a></li>
+									<li><a href="#" > Sylhet </a></li>
+									<li><a href="#" > Khulna </a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="#" > Asian</a></li>
+						<li><a href="#" > Europian </a></li>
+						<li><a href="#" > American </a></li>
+						<li><a href="#" > Australian </a></li>
+						<li><a href="#" > African </a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="skill.html" > Skill </a>
+				<div class="sub-bar2">
+				<ul>
+				<li><a href="#" > Primary </a></li>
+				<li><a href="#" > SSC </a></li>
+				<li><a href="#" > HSC </a></li>
+				<li><a href="#" > B.Sc (Hons) </a></li>
+				<li><a href="#" > M.Sc </a></li>
+				<li><a href="#" > PhD </a></li>
+				</ul>
+				</div>
+			</li>
+			<li><a href="Contact.html" > Contacts </a>
+				<div class="sub-bar2">
+				<ul>
+				<li><a href="#" > Primary </a></li>
+				<li><a href="#" > SSC </a></li>
+				<li><a href="#" > HSC </a></li>
+				<li><a href="#" > B.Sc (Hons) </a></li>
+				<li><a href="#" > M.Sc </a></li>
+				<li><a href="#" > PhD </a></li>
+				</ul>
+				</div>
+			</li>
+			<li><a href="family.html" > Family</a>
+				<div class="sub-bar2">
+				<ul>
+				<li><a href="#" > Primary </a></li>
+				<li><a href="#" > SSC </a></li>
+				<li><a href="#" > HSC </a></li>
+				<li><a href="#" > B.Sc (Hons) </a></li>
+				<li><a href="#" > M.Sc </a></li>
+				<li><a href="#" > PhD </a></li>
+				</ul>
+				</div>
+			</li>
+			<li><a href="frd.html" > Friends </a>
+				<div class="frd-bar2">
+				<ul>
+				<li><a href="#" > Best Frd </a></li>
+				<li><a href="#" > Child Frd </a></li>
+				<li><a href="#" > Clg Frd </a></li>
+				<li><a href="#" > Prf Frd </a></li>
+				</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="main-box">
+		<img class="bike-photo" src="#" alt="pik" >
+		<p> Mahfuz Ahamed Zulhaz </p>
+		<h> Boy Friend </h>
+					
+		<button class="btn"> Follow </button>
+									
+	</div>
+	
+	<div class="main-box2">
+	<img class="bike-photo2" src="#" alt="pik" >
+	<p2> Marjan Hasan Jerin </p2>
+	<h2> Girl Friend </h2>
+	
+	<button class="btn2"> Follow </button>
+		
+	</div>
+
+	<div> 
+		<table class="bike">
+			<th>
+				<td> Bike</td>
+				<td> Version </td>
+				<td> Kilo </td>
+				<td> Time</td>
+				<td> Top/Speed</td>
+			</th>
+			<tr>
+				<td> Pulsar</td>
+				<td> V2 </td>
+				<td> 20k </td>
+				<td> 1 year </td>
+				<td> 97 km/h</td>
+			</tr>
+			<tr>
+				<td> Apache</td>
+				<td> Rtr v3</td>
+				<td> 5k </td>
+				<td> 4 month </td>
+				<td> 106 km/h</td>
+			</tr>
+			<tr>
+			<td> Yamaha</td>
+			<td> Fz v1</td>
+			<td> 10k </td>
+			<td> 6 month </td>
+			<td> 120 km/h</td>
+			</tr>
+		</table>
+	</div>
+
+
+
+
+
+
+</body>
+</html>
